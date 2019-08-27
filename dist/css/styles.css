@@ -1,0 +1,96 @@
+
+html {
+  box-sizing: border-box;
+  background: lightblue;
+  text-align: center;
+  
+
+}
+
+h1 {
+  color: darkgreen;
+  font-family: 'helvetica neue';
+  font-size: 40px;
+  font-weight: 200;
+  font-weight: bold;
+  font-family: consolas;
+  border: 2px solid #73AD21;
+  border-radius: 25px;
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+
+  margin-bottom: 0;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  border-style: solid;
+  border: salmon;
+}
+
+.welcome {
+  font-weight: 400;
+  margin-top: 100px;
+}
+
+/*  Phase 4: Slide In & Out Classes */
+
+.align-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.align-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.slide {
+  opacity: 0;
+  transition: all .5s;
+}
+
+.align-left.slide {
+  transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide {
+  transform: translateX(30%) scale(0.95);
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+
+.dog-link {
+  display: none;
+}
+
+.h3dogs {
+  padding: 30px;
+  font-size: 35px;
+  color: brown;
+  font-weight: bold;
+
+}
+
+#clock {
+  font-size: 60px;
+  padding: 20px;
+}
+
+li {
+  font-size: 25px;
+  font-style: italic;
+}
+
+.todo-container {
+  padding: 60px;
+}
+
+.todolisttitle{
+  font-size: 30px;
+}
